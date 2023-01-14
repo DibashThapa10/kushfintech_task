@@ -77,7 +77,9 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                   Text(
                                     "Book your next train!",
-                                    style: TextStyle(color: Colors.grey),
+                                    style: TextStyle(
+                                        color: Colors.grey,
+                                        fontWeight: FontWeight.bold),
                                   ),
                                 ],
                               ),
@@ -161,7 +163,7 @@ class _HomePageState extends State<HomePage> {
                                         "Round trip",
                                         style: TextStyle(
                                             color: Colors.grey,
-                                            fontWeight: FontWeight.w500,
+                                            fontWeight: FontWeight.w600,
                                             fontSize: 14),
                                       ),
                                     ],
@@ -347,18 +349,19 @@ class _HomePageState extends State<HomePage> {
               ),
               Padding(
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 20, vertical: 35),
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: const [
                     Text(
                       "Popular Routes",
                       style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                     ),
                     Text(
                       "See all",
-                      style: TextStyle(color: Colors.grey),
+                      style: TextStyle(
+                          color: Colors.grey, fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),
@@ -371,6 +374,7 @@ class _HomePageState extends State<HomePage> {
           type: BottomNavigationBarType.fixed,
           selectedLabelStyle:
               const TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
+          unselectedLabelStyle: const TextStyle(fontWeight: FontWeight.w600),
           items: const [
             BottomNavigationBarItem(
               icon: Icon(

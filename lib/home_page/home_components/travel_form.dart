@@ -85,7 +85,7 @@ class LocationWidget extends StatelessWidget {
                           fontSize: 16, fontWeight: FontWeight.w600),
                     ),
                     const SizedBox(
-                      width: 40,
+                      width: 50,
                     ),
                     const Icon(
                       Icons.star_outlined,
@@ -94,7 +94,8 @@ class LocationWidget extends StatelessWidget {
                     ),
                     Text(
                       data.rating,
-                      style: const TextStyle(color: Colors.grey),
+                      style: const TextStyle(
+                          color: Colors.grey, fontWeight: FontWeight.bold),
                     ),
                   ],
                 )
