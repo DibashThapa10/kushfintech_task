@@ -51,7 +51,7 @@ class CustomSwitchState extends State<CustomSwitch>
               borderRadius: BorderRadius.circular(24.0),
               color: _circleAnimation!.value == Alignment.centerLeft
                   ? Colors.green
-                  : Colors.grey,
+                  : const Color.fromARGB(255, 230, 225, 225),
             ),
             child: Padding(
               padding: const EdgeInsets.only(

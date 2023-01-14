@@ -183,8 +183,8 @@ class _HomePageState extends State<HomePage> {
                     ),
                     margin: EdgeInsets.only(
                       top: size.height * 0.2,
-                      left: size.height * 0.04,
-                      right: size.height * 0.04,
+                      left: size.height * 0.025,
+                      right: size.height * 0.03,
                     ),
                     height: height * 0.4,
                     width: width * 0.9,
@@ -271,6 +271,7 @@ class _HomePageState extends State<HomePage> {
                               borderRadius: BorderRadius.circular(10),
                             ),
                             child: Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 const SizedBox(
                                   width: 10,
@@ -294,11 +295,14 @@ class _HomePageState extends State<HomePage> {
                                   confirmedDate,
                                   style: const TextStyle(
                                       fontSize: 14,
-                                      fontWeight: FontWeight.w500),
+                                      fontWeight: FontWeight.w600),
+                                ),
+                                const SizedBox(
+                                  width: 135,
                                 ),
                                 Padding(
                                   padding:
-                                      const EdgeInsets.only(left: 110, top: 5),
+                                      const EdgeInsets.symmetric(vertical: 5),
                                   child: Column(
                                     children: [
                                       const Text(

@@ -18,7 +18,10 @@ class ContainerWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       controller: addressController,
-      style: const TextStyle(color: Color.fromARGB(255, 10, 51, 69)),
+      style: const TextStyle(
+          color: Color.fromARGB(255, 10, 51, 69),
+          fontWeight: FontWeight.w600,
+          fontSize: 15),
       decoration: InputDecoration(
           prefixIcon: Row(
             mainAxisSize: MainAxisSize.min,
@@ -41,7 +44,9 @@ class ContainerWidget extends StatelessWidget {
             ],
           ),
           hintText: hinttext,
-          hintStyle: const TextStyle(fontSize: 14),
+          hintStyle: const TextStyle(
+            fontSize: 14,
+          ),
           border: InputBorder.none,
           enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),

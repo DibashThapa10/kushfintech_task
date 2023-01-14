@@ -68,7 +68,7 @@ class LocationWidget extends StatelessWidget {
                 Text(
                   data.locationName,
                   style: const TextStyle(
-                      fontSize: 16, fontWeight: FontWeight.w500),
+                      fontSize: 16, fontWeight: FontWeight.w600),
                 ),
                 const SizedBox(
                   height: 40,
