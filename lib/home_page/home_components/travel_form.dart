@@ -2,11 +2,16 @@ import 'package:flutter/material.dart';
 
 import '../model/location_model.dart';
 
-class TravelWidget extends StatelessWidget {
+class TravelWidget extends StatefulWidget {
   const TravelWidget({
     Key? key,
   }) : super(key: key);
 
+  @override
+  State<TravelWidget> createState() => _TravelWidgetState();
+}
+
+class _TravelWidgetState extends State<TravelWidget> {
   @override
   Widget build(BuildContext context) {
     final mediaQuery = MediaQuery.of(context);
